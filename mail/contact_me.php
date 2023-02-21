@@ -10,10 +10,10 @@ $email = strip_tags(htmlspecialchars($_POST['email']));
 $message = strip_tags(htmlspecialchars($_POST['message']));
 
 // Create the email and send the message
-$to = "contact@fresquedunumerique.org";
-$subject = "La Fresque du Numérique - message de $name";
-$body = "Nouveau message reçu depuis le site web de la Fresque du Numérique, de la part de $name - $email\n\n$message";
-$header = "From: contact@fresquedunumerique.org\n";
+$to = "psi.climat@gmail.com";
+$subject = "Le Puzzle Climat - message de $name";
+$body = "Nouveau message reçu depuis le site web du Puzzle Climat, de la part de $name - $email\n\n$message";
+$header = "From: psi.climat@gmail.com\n";
 $header .= "Reply-To: $email";
 
 if(!mail($to, $subject, $body, $header))

@@ -309,10 +309,11 @@ input[type=checkbox] {
   border-radius:30px;
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+button.bg-primary:hover {
   color: #fff;
-  background-color: #5a6268;
-  border-color: #545b62;
+  background-color: #5a6268 !important;
+  border-color: #5a6268;
 }
 
 .rounded {

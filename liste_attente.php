@@ -4,13 +4,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Le Puzzle Climat ou PSI Climat est atelier TRÈS ludique et interactif en équipe qui permet de comprendre les ordres de grandeur carbone et les actions ayant le plus d’impact positif">
+    <meta name="description" content="Le Puzzle Climat ou Puzzle des Solutions Individuelles Climat est un atelier TRÈS ludique et interactif en équipe qui permet de comprendre les ordres de grandeur carbone et les actions ayant le plus d’impact positif">
     <meta name="author" content="Aurélien Deragne">
     <title>Le PSI Climat</title>
     <link rel="icon" href="img/favicon.png">
     <meta property='og:title' content="Puzzle Climat">
     <meta property='og:type' content="website">
-    <meta property='og:url' content="https://www.psi-climat.org/">
+    <meta property='og:url' content="https://www.puzzleclimat.org/">
 
     <?php
     header("Status: 301 Moved Permanently", false, 301);

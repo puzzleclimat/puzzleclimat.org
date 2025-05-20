@@ -13,6 +13,11 @@
     "url": "https://github.com/AurelienDeragne/psiclimat/issues"
   },
   "homepage": "https://github.com/AurelienDeragne/psiclimat#readme",
+  "scripts": {
+    "start": "browser-sync start --server --files 'dist/**/*'",
+    "build": "gulp build",
+    "watch": "gulp watch"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.3.1",
     "bootstrap": "4.5.0",

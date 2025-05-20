@@ -76,9 +76,6 @@ gulp.task('js:minify', function() {
 // JS
 gulp.task('js', ['js:minify']);
 
-// Default task
-gulp.task('default', ['css', 'js', 'vendor']);
-
 // Configure the browserSync task
 gulp.task('browserSync', function() {
   browserSync.init({
@@ -88,9 +85,15 @@ gulp.task('browserSync', function() {
   });
 });
 
+// Build
+gulp.task('build', ['css', 'js', 'vendor']);
+
 // Dev task
 gulp.task('dev', ['css', 'js', 'browserSync'], function() {
   gulp.watch('./css/*.css', ['css']);
   gulp.watch('./js/*.js', ['js']);
   gulp.watch('./*.html', browserSync.reload);
 });
+
+// Default task
+gulp.task('default', ['build']);

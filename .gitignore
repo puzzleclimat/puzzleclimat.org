@@ -2,3 +2,7 @@
 
 # dependencies
 /node_modules
+
+# build output
+/vendor/
+/js/**/*.min.js

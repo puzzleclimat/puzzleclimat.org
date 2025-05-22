@@ -13,6 +13,11 @@
     "url": "https://github.com/AurelienDeragne/psiclimat/issues"
   },
   "homepage": "https://github.com/AurelienDeragne/psiclimat#readme",
+  "scripts": {
+    "start": "browser-sync start --server --files 'dist/**/*'",
+    "build": "gulp build",
+    "watch": "gulp watch"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.3.1",
     "bootstrap": "4.5.0",
@@ -22,12 +27,12 @@
   "devDependencies": {
     "browser-sync": "^2.26.13",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "6.0.0",
     "gulp-clean-css": "3.10.0",
     "gulp-filter": "5.1.0",
-    "gulp-header": "2.0.5",
     "gulp-rename": "1.4.0",
-    "gulp-sass": "4.0.1",
     "gulp-uglify": "3.0.1"
+  },
+  "overrides": {
+    "graceful-fs": "^4.2.11"
   }
 }

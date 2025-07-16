@@ -61,3 +61,25 @@
   });
 
 })(jQuery); // End of use strict
+
+function loadYoutube(el, video_id) {
+
+  // <div style="padding-bottom: 56.25%; position: relative;">
+  //   <iframe style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/pSIl4w64l3o?modestbranding=1&rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" >
+  //   </iframe>
+  // </div>
+
+  var iframe = document.createElement('iframe');
+  iframe.setAttribute('src', 'https://www.youtube-nocookie.com/embed/'+ video_id +'?autoplay=1&rel=0&showinfo=0&modestbranding=1&cc_load_policy=1');
+  iframe.setAttribute('frameborder', '0');
+  iframe.setAttribute('allow', 'autoplay; encrypted-media; fullscreen');
+  iframe.setAttribute('width', '100%');
+  iframe.setAttribute('height', '100%');
+  iframe.style.position = 'absolute';
+  iframe.style.top = '0';
+  iframe.style.left = '0';
+  iframe.style.width = '100%';
+  iframe.style.height = '100%';
+  el.innerHTML = '';
+  el.appendChild(iframe);
+}

@@ -2,7 +2,10 @@
 
 body {
   word-break: break-word;
-  font-family: "Arial", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", sans-serif;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;  
 }
 
 h1,
@@ -347,4 +350,424 @@ button.bg-primary:hover {
 .is-centered {
   display: flex;
   justify-content: center;
+}
+
+#parcours {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+  overflow: visible;
+}
+
+@media (min-width: 1200px) {
+  #parcours .etape {
+    flex: 1;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 1199px) {
+  #parcours .etape {
+    flex: 0 0 calc(50% - 0.5rem);
+    max-width: calc(50% - 0.5rem);
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #parcours {
+    flex-direction: column;
+  }
+  
+  #parcours .etape {
+    flex: 1;
+    max-width: 100%;
+  }
+}
+
+#parcours p {
+  margin: 0;
+}
+#parcours ul {
+  padding-left: 0.75rem;
+}
+#parcours article {
+  overflow: visible;
+}
+
+#parcours .etape {
+  overflow: visible;
+}
+
+
+#parcours .etape-card {
+  border: solid 1px #d9d9d9;
+  clip-path: polygon(
+    0 0,                      /* top-left normal */
+    calc(100% - 0.5rem) 0,     /* start of top-right cut */
+    100% 0.5rem,                /* end of top-right cut */
+    100% 100%,                /* bottom-right normal */
+    0.5rem 100%,                /* start of bottom-left cut */
+    0 calc(100% - 0.5rem)       /* end of bottom-left cut */
+  );
+  background: #d9d9d9;
+
+  font-size: 0.7rem;
+}
+
+#parcours .etape-card-inside {
+  /* Repeat the same params but with transparent backgroud to have only a thin border displayed */
+  border: transparent 1px white;
+  clip-path: polygon(
+    0 0,
+    calc(100% - 0.5rem) 0,
+    100% 0.5rem,
+    100% 100%,
+    0.5rem 100%,
+    0 calc(100% - 0.5rem)
+  );
+  background: white;
+  padding: 0.5rem;
+  text-align: center;
+  align-content: center;
+}
+
+#parcours .etape h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  align-content: center;
+  height: 6rem;
+  margin: 0;
+  border-radius: 1rem;
+  word-spacing: 999rem;
+}
+
+#parcours #etape-experimentee h1,
+#parcours #etape-formateurrice h1{
+  color: white;
+}
+
+#parcours .etape .etape-details {
+  margin-left: 0.75rem;
+  padding: 1rem 0 1rem 0.5rem;
+}
+
+#parcours #etape-neoanim .etape-details {
+  border-left: solid #d9d9d9 0.25rem;
+}
+
+#parcours #etape-neoanim h1 {
+  background: #d9d9d9;
+}
+
+#parcours #etape-neoanim-cards {
+  height: 13rem;
+  position: relative;
+  overflow: visible;
+}
+
+#parcours #etape-neoanim-cards #etape-neoanim-toptext {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#parcours #etape-neoanim-cards #etape-neoanim-participation {
+  position: absolute;
+  width: 40%;
+  top: 7rem;
+  left: -10%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 1200px) {
+  #parcours #etape-neoanim-cards #etape-neoanim-participation {
+    width: 35%;
+    left: -5%;
+  }
+}
+
+#parcours #etape-neoanim-cards #etape-neoanim-formation-3h {
+  position: absolute;
+  width: 50%;
+  top: 4rem;
+  right: 0;
+  transform: translateY(-50%);
+  overflow: visible;
+}
+
+#parcours #etape-neoanim-cards #etape-neoanim-formation-7h {
+  position: absolute;
+  width: 50%;
+  top: 10rem;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+#parcours #etape-neoanim-cards #etape-neoanim-participation-formation-3h-connector {
+  position: absolute;
+  left: 30%;
+  top: 4rem;
+  width: 20%;
+  height: 3rem;
+  background-color: #d9d9d9;
+  pointer-events: none;
+  background: linear-gradient(to bottom right, transparent calc(50% - 0.75px), #d9d9d9 calc(50% - 0.5px), #d9d9d9 calc(50% + 0.5px), transparent calc(50% + 0.75px));
+}
+
+#parcours #etape-neoanim-cards #etape-neoanim-participation-formation-7h-connector {
+  position: absolute;
+  left: 30%;
+  top: 7rem;
+  width: 20%;
+  height: 3rem;
+  background-color: #d9d9d9;
+  pointer-events: none;
+  background: linear-gradient(to top right, transparent calc(50% - 0.75px), #d9d9d9 calc(50% - 0.5px), #d9d9d9 calc(50% + 0.5px), transparent calc(50% + 0.75px));
+}
+
+#parcours #etape-neoanim-cards #etape-neoanim-formation-3h-connector {
+  position: absolute;
+  right: -1.5rem;
+  top: 4rem;
+  width: 1.5rem;
+  height: 1px;
+  background-color: #d9d9d9;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+#parcours #etape-neoanim-cards #etape-neoanim-formation-7h-connector {
+  position: absolute;
+  right: -1.5rem;
+  top: 10rem;
+  width: 1.5rem;
+  height: 1px;
+  background-color: #d9d9d9;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+#parcours #etape-neoanim-prix {
+  font-size: 0.8rem;
+}
+
+#parcours #etape-autonome {
+}
+
+#parcours #etape-autonome-cards {
+  height: 13rem;
+  position: relative;
+}
+
+#parcours #etape-autonome-cards #etape-autonome-formation-3h {
+  position: absolute;
+  top: 1rem;
+  width: 100%;
+  font-size: 0.7rem;
+  font-style: italic;
+}
+
+#parcours #etape-autonome-cards #etape-autonome-animation {
+  position: absolute;
+  width: 100%;
+  top: 4rem;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+#parcours #etape-autonome-cards #etape-autonome-formation-7h {
+  position: absolute;
+  top: 7.5rem;
+  width: 100%;
+  font-size: 0.7rem;
+  font-style: italic;
+}
+
+@media (min-width: 993px) {
+  #parcours #etape-autonome-cards #etape-autonome-formation-3h, #parcours #etape-autonome-cards #etape-autonome-formation-7h {
+    display: none;
+  }
+}
+
+#parcours #etape-autonome-cards #etape-autonome-coaching {
+  position: absolute;
+  width: 100%;
+  top: 10rem;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+#parcours #etape-autonome-cards #etape-autonome-animation-connector {
+  position: absolute;
+  left: -1.5rem;
+  top: 4rem;
+  width: 1.5rem;
+  height: 1px;
+  background-color: #d9d9d9;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+#parcours #etape-autonome-cards #etape-autonome-coaching-connector {
+  position: absolute;
+  left: -1.5rem;
+  top: 10rem;
+  width: 1.5rem;
+  height: 1px;
+  background-color: #d9d9d9;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+#parcours #etape-autonome h1 {
+  background: #FBE357;
+}
+
+#parcours #etape-autonome .etape-details {
+  border-left: solid #FBE357 0.25rem; 
+}
+
+#parcours #etape-autonome #etape-autonome-preconisations {
+  font-size: 0.65rem;
+  font-style: italic;
+}
+
+#parcours #etape-experimentee {
+}
+
+#parcours #etape-experimentee h1 {
+  background: #DD376F;
+}
+
+#parcours #etape-experimentee .etape-details {
+  border-left: solid #DD376F 0.25rem; 
+}
+
+#parcours #etape-formateurrice {
+}
+
+#parcours #etape-formateurrice h1 {
+  background: #41AD8E;
+}
+
+#parcours #etape-formateurrice .etape-details {
+  border-left: solid #41AD8E 0.25rem; 
+}
+
+
+#parcours article footer {
+  padding: 0.5rem;
+  margin-left: 0.75rem;
+  font-size: 0.95rem;
+  align-items: center;
+
+  clip-path: polygon(
+    0 0,
+    calc(100% - 1.5rem) 0,
+    100% 50%,
+    calc(100% - 1.5rem) 100%,
+    0 100%
+  );
+}
+
+#parcours #etape-neoanim footer {
+  background: #d9d9d9;
+  width: calc(4 * (100% + 1rem));
+  height: 2.25rem
+}
+
+#parcours #etape-autonome footer {
+  background: #FBE357;
+  width: calc(3 * (100% + 1rem));
+  height: 3.75rem
+}
+
+#parcours #etape-experimentee footer {
+  background: #DD376F;
+  color: white;
+  width: calc(2 * (100% + 1rem));
+  height: 2.25rem
+}
+
+#parcours #etape-formateurrice footer {
+  background: #41AD8E;
+  color: white;
+  width: calc(1 * (100% + 1rem));
+  height: 2.25rem
+}
+
+#parcours #etape-neoanim .etape-details {
+  height: 22rem;
+}
+
+#parcours #etape-autonome .etape-details {
+  height: 18rem;
+}
+
+#parcours #etape-experimentee .etape-details {
+  height: 15.5rem;
+}
+
+#parcours #etape-formateurrice .etape-details {
+  height: 13rem;
+}
+
+@media (max-width: 1199px) {
+
+  #parcours #etape-neoanim .etape-details {
+    height: 24.75rem;
+  }
+
+  #parcours #etape-neoanim  {
+    margin-bottom: 1rem;
+  }
+
+  #parcours #etape-neoanim footer {
+    width: calc(2 * (100% + 1rem));
+  }
+
+  #parcours #etape-autonome footer {
+    width: calc(1 * (100% + 1rem));
+    height: 6.5rem
+  }
+}
+
+@media (max-width: 992px) {
+  #parcours #etape-neoanim footer {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  #parcours #etape-autonome footer {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  #parcours #etape-experimentee footer {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  #parcours #etape-formateurrice footer {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  #parcours #etape-neoanim .etape-details {
+    height: auto;
+  }
+
+  #parcours #etape-autonome .etape-details {
+    height: auto;
+  }
+
+  #parcours #etape-experimentee .etape-details {
+    height: auto;
+  }
+
+  #parcours #etape-formateurrice .etape-details {
+    height: auto;
+  }
 }

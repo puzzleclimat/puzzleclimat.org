@@ -13,19 +13,47 @@
   <meta property='og:type' content="website">
   <meta property='og:image' content="https://www.puzzleclimat.org/img/logo-puzzle-climat.png">
   <meta property='og:url' content="https://www.puzzleclimat.org/">
-  <link rel="canonical" href="https://www.puzzleclimat.org/">
+  <link rel="canonical" href="https://www.puzzleclimat.org/">  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="css/custom.min.css" rel="stylesheet">
+  <link href="css/custom.min.css?v=1763136125" rel="stylesheet">
 </head>
 
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav class="bg-white font-weight-bold" id="mainNav">
+  <nav class="navbar navbar-expand-lg bg-white font-weight-bold fixed-top border-bottom" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="index.html#page-top"><img class="w-50" src="img/logo-puzzle-climat.png"
+      <a class="navbar-brand js-scroll-trigger" href="/"><img class="w-50" src="img/logo-puzzle-climat.png"
           alt="Logo Puzzle Climat"></a>
+      <button class="navbar-toggler navbar-toggler-right bg-primary text-white rounded p-3" type="button"
+        data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars pl-2"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#atelier">L'atelier</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#participer">Participer !</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#l_equipe">L'équipe</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="formations.html">Devenir anim</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
@@ -46,31 +74,94 @@
         La formation à l'animation implique l'achat des boîtes de jeu, qui sont fabriquées en france dans un ESAT.
         Pour que leur coût reste accessible au plus grande nombre, nous proposons plusieurs formules, qui débutent <strong>à partir de 65 € / mois sur 3 mois</strong> (pour 2 boîtes, aussi à 195 € en paiement unique).</p>
       <h3 class="mt-5">🧩Principes du parcours animateur.rice Puzzle Climat</h3>
-        <p>Pour participer à la formation à l'animation, il faut avoir au préalable participé :</p>
-        <ul>
-          <li>à un Puzzle Climat depuis juin 2022,</li>
-          <li>et également à un atelier de la Fresque du Climat.</li>
-        </ul>
-        <p>La formation à l'animation du Puzzle Climat vous permet d'animer des ateliers dans des cadres non-commerciaux via la licence Creative Commons BY-NC-ND.</p>
-        <p><strong>L'animation en pro</strong> est accessible aux personnes ayant atteint le niveau d'expérience "anim expérimenté.e", ce qui signifie notamment :</p>
-        <ul>
-          <li>avoir au préalable animé au moins 4 ateliers citoyens pour le compte de l'association (dont au moins : 1 en co-animation, 1 en autonomie (seul.e), et 1 en présentiel),</li>
-          <li>être anim de la Fresque du Climat, de 2tonnes ou Inventons Nos Vies Bas Carbone,</li>
-          <li>avoir participé à plusieurs autres ateliers permettant de mieux comprendre l’efficacité carbone des actions.</li>
-        </ul>        
-        <p>Les animations en pro doivent donner lieu au versement de <strong>droits d'utilisation</strong> à l'association PSI Climat (10€ TTC/ participant.e).<br>
+        <section id="parcours">
+          <article id="etape-neoanim" class="etape">
+            <h1>Néo-anim</h1>
+            <div class="etape-details">
+              <div id="etape-neoanim-cards">
+                <p id="etape-neoanim-toptext">J’ai suivi une formation à l’animation Puzzle Climat</p>
+                <div id="etape-neoanim-participation" class="etape-card"><div class="etape-card-inside">Participation à un Puzzle Climat</div></div>
+                <div id="etape-neoanim-formation-3h" class="etape-card"><div class="etape-card-inside">Formation 3h</div></div>
+                <div id="etape-neoanim-formation-7h" class="etape-card"><div class="etape-card-inside">Formation Pro 7h<p><small>(offre à venir en 2026)</small></p></div></div>
+                <div id="etape-neoanim-participation-formation-3h-connector"></div>
+                <div id="etape-neoanim-participation-formation-7h-connector"></div>
+                <div id="etape-neoanim-formation-3h-connector"></div>
+                <div id="etape-neoanim-formation-7h-connector"></div>
+              </div>
+              <div id="etape-neoanim-prix">
+                <p>Prix</p>
+                <p><strong>Formation 3h :</strong> 60€ TTC <strong>(**)</strong></p>
+                <p><strong>Jeu (4 boîtes) :</strong> 290€ TTC</p>
+                <p><strong>Formation Pro 7h + Coaching :</strong> sur devis</p>
+              </div>
+            </div>
+            <footer>Je peux animer des Puzzle Climat dans un cadre bénévole (élèves, étudiants, famille, amis, voisins...)</footer>
+          </article>
+          <article id="etape-autonome" class="etape">
+            <h1>Anim autonome</h1>
+            <div class="etape-details">
+              <div id="etape-autonome-cards">
+                <div id="etape-autonome-formation-3h">Parcours formation 3h</div>
+                <div id="etape-autonome-animation" class="etape-card"><div class="etape-card-inside">J'ai animé <strong>2&nbsp;ateliers</strong>&nbsp;:
+                  <ul>
+                    <li>au moins 1 en <u>co‑animation</u> avec 1 anim autonome (ou&nbsp;+)</li>
+                    <li>au moins 1 en présentiel</li>
+                  </ul>
+                </div></div>
+                <div id="etape-autonome-formation-7h">Parcours formation 7h</div>
+                <div id="etape-autonome-coaching" class="etape-card"><div class="etape-card-inside">J’ai animé <strong>1&nbsp;atelier</strong> en étant <u>coaché</u> par 1 anim expérimenté.e (ou&nbsp;+), en présentiel</div></div>
+                <div id="etape-autonome-animation-connector"></div>
+                <div id="etape-autonome-coaching-connector"></div>
+              </div>
+              <div id="etape-autonome-preconisations">
+                <p>Préconisations :</p>
+                <ul>
+                <li>J’ai adhéré à l’asso</li>
+                <li>J’ai participé à au moins 2 autres ateliers amis <strong>(*)</strong></li>
+                <ul>
+              </div>
+            </div>
+            <footer>
+              <p>Je peux proposer des ateliers citoyens au nom de l’association (visibles sur le site web)</p>
+              <p>Je peux animer auprès de mes collègues de travail (charte à signer + droits d’utilisations à reverser)</p>
+            </footer>
+          </article>
+          <article id="etape-experimentee" class="etape">
+            <h1>Anim expérimenté·e</h1>
+            <div class="etape-details">
+              <p>J’ai animé ou co-animé en tout 4&nbsp;ateliers, dont au moins 1 en autonomie (seul·e)</p>
+            </div>
+            <footer>Je peux vendre l’atelier en pro (charte à signer + droits d’utilisations à reverser)</footer>
+          </article>
+          <article id="etape-formateurrice" class="etape">
+            <h1>Formateur·rice</h1>
+            <div class="etape-details">
+              <ul>
+                <li>J’ai animé en tout 10&nbsp;ateliers, dont au moins 5 pour le compte de l'asso et dont au moins 1 en distanciel</li>
+                <li>Parcours Formateur·rice</li>
+              </ul>
+            </div>
+            <footer>Je forme des anims !</footer>
+          </article>
+        </section>
+        <p id="footnotes">
+          <strong>(*)</strong> Ateliers amis, pour mieux comprendre l’efficacité carbone des actions : Fresque du Climat, 2tonnes, Inventons Nos Vies Bas Carbone, FDConstruction, FDRénovation, FDAlimentation, FAgri’Alim, FDMobilité, FDNumérique, FDTextile, FDDéchets<br>
+          <strong>(**)</strong> Sans les boîtes, la formation donne accès à l’ensemble des ateliers : distanciel & présentiel en bénévole et pro (après avoir suivi le parcours ci-dessus), il faut “juste” se faire prêter les boîtes en présentiel.
+        </p>
+      
+        <p>Les animations en contexte pro (pour ses collègues ou en prestation) doivent donner lieu au versement de <strong>droits d'utilisation</strong> à l'association PSI Climat (10€ TTC/ participant.e).<br>
         Plus de détails sur la licence en bas de page.</p>
-      <h3 class="mt-5">Les prochaines formations proposées</h3>
-        <div class="row">
-        <div class="col-12">
-            <a title="Vente de billets en ligne" href="https://www.billetweb.fr/multi_event.php?multi=40500&color=4185c1"  class="shop_frame"  target="_blank"  data-src="https://www.billetweb.fr/multi_event.php?multi=40500&color=4185c1"  data-max-width="100%"  data-initial-height="600" data-scrolling="no"  data-id="40500"  data-resize="1">Vente de billets en ligne</a><script type="text/javascript" src="https://www.billetweb.fr/js/export.js"></script>
-            <p>Tout est complet ? Les dates ou lieux proposés ne vous conviennent pas ?<br>
-            Pas de panique, revenez de temps en temps, nous ajoutons régulièrement de nouvelles sessions :)<br>
-            Vous pouvez aussi vous inscrire sur notre liste d'attente, à qui nous signalons régulièrement les nouvelles formations.<br>
-            <a class="btn btn-secondary btn-lg px-5 my-4 js-scroll-trigger" href="https://forms.gle/8BarxGwUsDNTCFWu9" target="_blank">M'inscrire en liste d'attente (formations)</a>
-            </p>
+        <h3 class="mt-5">Les prochaines formations proposées</h3>
+          <div class="row">
+          <div class="col-12">
+              <a title="Vente de billets en ligne" href="https://www.billetweb.fr/multi_event.php?multi=40500&color=4185c1"  class="shop_frame"  target="_blank"  data-src="https://www.billetweb.fr/multi_event.php?multi=40500&color=4185c1"  data-max-width="100%"  data-initial-height="600" data-scrolling="no"  data-id="40500"  data-resize="1">Vente de billets en ligne</a><script type="text/javascript" src="https://www.billetweb.fr/js/export.js"></script>
+              <p>Tout est complet ? Les dates ou lieux proposés ne vous conviennent pas ?<br>
+              Pas de panique, revenez de temps en temps, nous ajoutons régulièrement de nouvelles sessions :)<br>
+              Vous pouvez aussi vous inscrire sur notre liste d'attente, à qui nous signalons régulièrement les nouvelles formations.<br>
+              <a class="btn btn-secondary btn-lg px-5 my-4 js-scroll-trigger" href="https://forms.gle/8BarxGwUsDNTCFWu9" target="_blank">M'inscrire en liste d'attente (formations)</a>
+              </p>
+        </div>
       </div>
-    </div>
     </div>
   </section>
 
@@ -100,7 +191,8 @@
         <div class="col-12 col-md-6">
           <h3>Utilisation pro de l’atelier</h3>
           <p class="pr-4">
-            Dans les contextes professionnels, les personnes formées à l'animation et ayant atteint le niveau d'expérience "Anim expérimenté·e" peuvent utiliser cet outil en reversant des droits d’utilisation (10€ TTC/ participant.e) à l’association Puzzle Climat. Ces droits collectés servent à financer la diffusion du Puzzle Climat via les réseaux associatifs et l’utilisation citoyenne et dans l’enseignement, afin de diffuser au maximum les actions efficaces pour réduire l'empreinte carbone.</p>
+            Dans les contextes professionnels (<u>pour ses collègues ou en prestation</u>), les personnes formées à l'animation et ayant atteint le niveau d'expérience <u>requis</u> peuvent utiliser cet outil en reversant des droits d’utilisation (10€ TTC/ participant.e) à l’association Puzzle Climat. Ces droits collectés servent à financer la diffusion du Puzzle Climat via les réseaux associatifs et l’utilisation citoyenne et dans l’enseignement, afin de diffuser au maximum les actions efficaces pour réduire l'empreinte carbone.
+          </p>
         </div>
       </div>
     </div>

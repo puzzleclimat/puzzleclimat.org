@@ -574,7 +574,7 @@ button.bg-primary:hover {
 
 #parcours #etape-autonome-cards #etape-autonome-formation-3h {
   position: absolute;
-  top: 3rem;
+  top: 2.25rem;
   width: 100%;
   font-size: 0.85rem;
   font-style: italic;
@@ -586,6 +586,14 @@ button.bg-primary:hover {
   top: 6rem;
   right: 0;
   transform: translateY(-50%);
+}
+
+#parcours #etape-autonome-cards #etape-autonome-animation .etape-card-inside {
+  text-align: left;
+}
+
+#parcours #etape-autonome-cards #etape-autonome-animation .etape-card-inside ul {
+  margin: 0;
 }
 
 #parcours #etape-autonome-cards #etape-autonome-formation-7h {
@@ -604,7 +612,7 @@ button.bg-primary:hover {
 
 @media (min-width: 768px) {
   #parcours #etape-autonome-cards #etape-autonome-formation-3h {
-    top: 3.5rem;
+    top: 2.25rem;
   }
 
   #parcours #etape-autonome-cards #etape-autonome-formation-7h {
@@ -619,6 +627,10 @@ button.bg-primary:hover {
   top: 12rem;
   right: 0;
   transform: translateY(-50%);
+}
+
+#parcours #etape-autonome-cards #etape-autonome-coaching .etape-card-inside {
+  text-align: left;
 }
 
 #parcours #etape-autonome-cards #etape-autonome-animation-connector {

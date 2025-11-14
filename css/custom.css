@@ -355,7 +355,7 @@ button.bg-primary:hover {
 #parcours {
   display: flex;
   flex-wrap: wrap;
-  font-size: 0.85rem;
+  font-size: 1rem;
   overflow: visible;
 }
 
@@ -412,7 +412,7 @@ button.bg-primary:hover {
   );
   background: #d9d9d9;
 
-  font-size: 0.7rem;
+  font-size: 0.81rem;
 }
 
 #parcours .etape-card-inside {
@@ -461,7 +461,7 @@ button.bg-primary:hover {
 }
 
 #parcours #etape-neoanim-cards {
-  height: 13rem;
+  height: 15rem;
   position: relative;
   overflow: visible;
 }
@@ -474,15 +474,15 @@ button.bg-primary:hover {
 
 #parcours #etape-neoanim-cards #etape-neoanim-participation {
   position: absolute;
-  width: 40%;
-  top: 7rem;
+  width: 43%;
+  top: 9rem;
   left: -10%;
   transform: translateY(-50%);
 }
 
 @media (max-width: 1200px) {
   #parcours #etape-neoanim-cards #etape-neoanim-participation {
-    width: 35%;
+    width: 38%;
     left: -5%;
   }
 }
@@ -490,7 +490,7 @@ button.bg-primary:hover {
 #parcours #etape-neoanim-cards #etape-neoanim-formation-3h {
   position: absolute;
   width: 50%;
-  top: 4rem;
+  top: 6rem;
   right: 0;
   transform: translateY(-50%);
   overflow: visible;
@@ -499,16 +499,20 @@ button.bg-primary:hover {
 #parcours #etape-neoanim-cards #etape-neoanim-formation-7h {
   position: absolute;
   width: 50%;
-  top: 10rem;
+  top: 12rem;
   right: 0;
   transform: translateY(-50%);
 }
 
+#parcours #etape-neoanim-cards #etape-neoanim-formation-7h small {
+  font-size: 78%;
+}
+
 #parcours #etape-neoanim-cards #etape-neoanim-participation-formation-3h-connector {
   position: absolute;
-  left: 30%;
-  top: 4rem;
-  width: 20%;
+  left: 33%;
+  top: 6rem;
+  width: 17%;
   height: 3rem;
   background-color: #d9d9d9;
   pointer-events: none;
@@ -517,9 +521,9 @@ button.bg-primary:hover {
 
 #parcours #etape-neoanim-cards #etape-neoanim-participation-formation-7h-connector {
   position: absolute;
-  left: 30%;
-  top: 7rem;
-  width: 20%;
+  left: 33%;
+  top: 9rem;
+  width: 17%;
   height: 3rem;
   background-color: #d9d9d9;
   pointer-events: none;
@@ -529,7 +533,7 @@ button.bg-primary:hover {
 #parcours #etape-neoanim-cards #etape-neoanim-formation-3h-connector {
   position: absolute;
   right: -1.5rem;
-  top: 4rem;
+  top: 6rem;
   width: 1.5rem;
   height: 1px;
   background-color: #d9d9d9;
@@ -540,7 +544,7 @@ button.bg-primary:hover {
 #parcours #etape-neoanim-cards #etape-neoanim-formation-7h-connector {
   position: absolute;
   right: -1.5rem;
-  top: 10rem;
+  top: 12rem;
   width: 1.5rem;
   height: 1px;
   background-color: #d9d9d9;
@@ -549,38 +553,38 @@ button.bg-primary:hover {
 }
 
 #parcours #etape-neoanim-prix {
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 #parcours #etape-autonome {
 }
 
 #parcours #etape-autonome-cards {
-  height: 13rem;
+  height: 15rem;
   position: relative;
 }
 
 #parcours #etape-autonome-cards #etape-autonome-formation-3h {
   position: absolute;
-  top: 1rem;
+  top: 3rem;
   width: 100%;
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   font-style: italic;
 }
 
 #parcours #etape-autonome-cards #etape-autonome-animation {
   position: absolute;
   width: 100%;
-  top: 4rem;
+  top: 6rem;
   right: 0;
   transform: translateY(-50%);
 }
 
 #parcours #etape-autonome-cards #etape-autonome-formation-7h {
   position: absolute;
-  top: 7.5rem;
+  top: 9rem;
   width: 100%;
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   font-style: italic;
 }
 
@@ -590,10 +594,21 @@ button.bg-primary:hover {
   }
 }
 
+@media (min-width: 768px) {
+  #parcours #etape-autonome-cards #etape-autonome-formation-3h {
+    top: 3.5rem;
+  }
+
+  #parcours #etape-autonome-cards #etape-autonome-formation-7h {
+    top: 9.5rem;
+  }
+}
+
+
 #parcours #etape-autonome-cards #etape-autonome-coaching {
   position: absolute;
   width: 100%;
-  top: 10rem;
+  top: 12rem;
   right: 0;
   transform: translateY(-50%);
 }
@@ -601,7 +616,7 @@ button.bg-primary:hover {
 #parcours #etape-autonome-cards #etape-autonome-animation-connector {
   position: absolute;
   left: -1.5rem;
-  top: 4rem;
+  top: 6rem;
   width: 1.5rem;
   height: 1px;
   background-color: #d9d9d9;
@@ -612,7 +627,7 @@ button.bg-primary:hover {
 #parcours #etape-autonome-cards #etape-autonome-coaching-connector {
   position: absolute;
   left: -1.5rem;
-  top: 10rem;
+  top: 12rem;
   width: 1.5rem;
   height: 1px;
   background-color: #d9d9d9;
@@ -629,7 +644,7 @@ button.bg-primary:hover {
 }
 
 #parcours #etape-autonome #etape-autonome-preconisations {
-  font-size: 0.65rem;
+  font-size: 0.85rem;
   font-style: italic;
 }
 
@@ -659,7 +674,7 @@ button.bg-primary:hover {
 #parcours article footer {
   padding: 0.5rem;
   margin-left: 0.75rem;
-  font-size: 0.95rem;
+  font-size: 1rem;
   align-items: center;
 
   clip-path: polygon(
@@ -698,25 +713,25 @@ button.bg-primary:hover {
 }
 
 #parcours #etape-neoanim .etape-details {
-  height: 22rem;
+  height: 24rem;
 }
 
 #parcours #etape-autonome .etape-details {
-  height: 18rem;
+  height: 20rem;
 }
 
 #parcours #etape-experimentee .etape-details {
-  height: 15.5rem;
+  height: 17.5rem;
 }
 
 #parcours #etape-formateurrice .etape-details {
-  height: 13rem;
+  height: 15rem;
 }
 
 @media (max-width: 1199px) {
 
   #parcours #etape-neoanim .etape-details {
-    height: 24.75rem;
+    height: 26.75rem;
   }
 
   #parcours #etape-neoanim  {

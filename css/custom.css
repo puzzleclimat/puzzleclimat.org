@@ -352,6 +352,10 @@ button.bg-primary:hover {
   justify-content: center;
 }
 
+#devenir_anim {
+  padding-top: 8rem;
+}
+
 #parcours {
   display: flex;
   flex-wrap: wrap;
